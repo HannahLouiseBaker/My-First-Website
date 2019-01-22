@@ -64,7 +64,7 @@
     </div>
     <hr/>
     <div>
-      <form <!-- action="..." method="POST"-->>
+      <form><!-- action="..." method="POST" -->
         <h2>Take the quiz!</h2>
         <p>What would you like to do in the forest?</p>
         <label for="climb-tree">
@@ -103,6 +103,34 @@
         <label for="rating">
           <span>1</span><input id="rating" type="range" min="1" max="10" name="rating"><span>10</span>
         </label>
+        <br/>
+        <p>What was your favourite part of the day?</p>
+        <label for="favourite">
+          <select id="favourite" name="favourite">
+            <option value="group-discussion">Group Discussion</option>
+            <option value="forest-walk">Forest Walk</option>
+            <option value="lunch">Lunch</option>
+          </select>
+        </label>
+        <br/>
+        <p>Which tree did you like the most?</p>
+        <label for="tree">
+          <input id="tree" type="text" list="trees">
+            <datalist id="trees">
+              <option value="willow">Willow</option>
+              <option value="yew">Yew</option>
+              <option value="birch">Birch</option>
+              <option value="sycamore">Sycamore</option>
+              <option value="fir">Fir</option>
+            </datalist>
+          </input>
+        </label>  
+        <br/>
+        <p>Any additional comments:</p>
+        <label for="comments">
+          <textarea id="comments" rows="3" cols="5"></textarea>
+        </label>
+        <br/>
         <label for="username">Your Name:</label>
         <input id="username" type="text" name="username" placeholder="Your Name">
         <br/>
