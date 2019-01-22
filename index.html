@@ -128,11 +128,14 @@
         <br/>
         <p>Any additional comments:</p>
         <label for="comments">
-          <textarea id="comments" rows="3" cols="5"></textarea>
+          <textarea id="comments" rows="3" cols="10" minlength="25" maxlength="100"></textarea>
         </label>
         <br/>
         <label for="username">Your Name:</label>
-        <input id="username" type="text" name="username" placeholder="Your Name">
+        <input id="username" type="text" name="username" placeholder="Your Name" pattern="[a-zA-Z]">
+        <br/>
+        <label for"password">Your Password:</label>
+        <input id="password" type="password" name="password" min="3" max="15">
         <br/>
         <button type="submit">Submit</button>
       </form>
