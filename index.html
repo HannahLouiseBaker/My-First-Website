@@ -64,19 +64,19 @@
     </div>
     <hr/>
     <div>
-      <form>
+      <form <!-- action="..." method="POST"-->>
         <h2>Take the quiz!</h2>
         <p>What would you like to do in the forest?</p>
         <label for="climb-tree">
-          <input id="climb-tree" type="checkbox" name="forest-quiz-1">Climb a tree</input>
+          <input id="climb-tree" type="checkbox" name="forest-quiz-1" value="clikmb-tree">Climb a tree</input>
         </label>
         <br/>
         <label for="build-fort">
-          <input id="build-fort" type="checkbox" name="forest-quiz-1">Build a fort</input>
+          <input id="build-fort" type="checkbox" name="forest-quiz-1" value="build-fort">Build a fort</input>
         </label>
         <br/>
         <label for="make-soup">
-          <input id="make-soup" type="checkbox" name="forest-quiz-1">Make mud soup</input>
+          <input id="make-soup" type="checkbox" name="forest-quiz-1" value="make-soup">Make mud soup</input>
         </label>
         <br/>
         <button type="submit">Submit</button>
@@ -87,15 +87,19 @@
       <h2>Leave a review</h2>
         <p>Did you enjoy your trip to the forest?</p>
         <label for="Yes">
-          <input type="radio" name="yes-no">Yes</input>
+          <input id="yes" type="radio" name="yes-no" value="yes">Yes</input>
         </label>
         <br/>
         <label for="no">
-          <input type="radio" name="yes-no">No</input>
+          <input id="no" type="radio" name="yes-no" value="no">No</input>
         </label>
         <br/>
+        <p>How likely are you to recommend Forest Labs?</p>
+        <label for="rating">
+          <input id="rating" type="number" name="rating">
+        </label>
         <label for="username">Your Name:</label>
-        <input type="text" id="username" placeholder="Your Name">
+        <input id="username" type="text" name="username" placeholder="Your Name">
         <br/>
         <button type="submit">Submit</button>
       </form>
