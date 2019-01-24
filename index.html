@@ -1,13 +1,24 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
 <style>
   h1 {
     color: green;
+    font-family: Raleway;
+    font-size: 50px;
   }
   
   .green-font {
     color: green;
   }
   
+  #review {
+    color: red;
+  }
+  
+  .quiz {
+    background-color: yellow;
+  }
 </style>
 <html>  
   <head>
@@ -73,7 +84,7 @@
       </table>
     </div>
     <hr/>
-    <div>
+    <div class="quiz">
       <form><!-- action="..." method="POST" -->
         <h2>Take the quiz!</h2>
         <p>What would you like to do in the forest?</p>
@@ -94,7 +105,7 @@
     </div>
     <div>
       <form>
-      <h2>Leave a review</h2>
+      <h2 id="review">Leave a review</h2>
         <p>Did you enjoy your trip to the forest?</p>
         <label for="Yes">
           <input id="yes" type="radio" name="yes-no" value="yes">Yes</input>
